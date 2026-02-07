@@ -66,7 +66,8 @@ company = Company.find_by({"name" => "Apple"})
 puts company["url"]
 
 # 7. delete a row
-apple.destroy
+anthropic = Company.find_by({"name" => "Anthropic"})
+anthropic.destroy
 puts "Companies: #{Company.all.count}"
 
 # print out all companies - loop
